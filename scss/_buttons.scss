@@ -1,0 +1,120 @@
+%btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  background: transparent;
+  padding: 1.5rem 3rem;
+  border: 2px solid white;
+  width: auto;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  @media (max-width: $screen-xs){
+    width: 100%;
+  }
+}
+
+%btn-work {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $prime;
+  background: transparent;
+  padding: 1.5rem 3rem;
+  border: 2px solid $prime;
+  width: auto;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  @media (max-width: $screen-xs){
+    width: 100%;
+  }
+}
+
+.btn-prime {
+  @extend %btn;
+  color: $prime;
+  background: #fff;
+  border: 2px solid $prime;
+     
+  &:hover {
+    background: $prime;
+    color: #fff;
+  }
+}
+
+.btn-outline {
+  @extend %btn;
+    
+  &:hover {
+    background: #fff;
+    color: $prime;
+  }
+}
+
+.btnHeader {
+  padding: 1.5rem 2rem;
+  //font-size: 2rem;
+  border: 0.5rem solid #63b945;
+  font-weight: bold;
+  margin: 0 5rem;
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    border: 0.5rem solid #63b945;
+    background: #63b945;
+  }
+}
+
+.btnNote {
+  padding: 1.5rem 2rem;
+  //font-size: 2rem;
+  font-weight: bold;
+  border: 0.5rem solid #63b945;
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    border: 0.5rem solid #63b945;
+    background: #63b945;
+  }
+}
+
+.btnCall {
+  padding: 1rem 5rem;
+  border: 0.2rem solid #707070;
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    //border: 0.5rem solid #63b945;
+    background: #63b945;
+  }
+}
+
+.btnFooterPosition {
+  bottom: -8rem;
+  left: -75rem;
+}
+
+.btnFooter {
+  padding: 1rem 10rem;
+  border: 0.5rem solid #63b945;
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    border: 0.5rem solid #63b945;
+    background: #63b945;
+  }
+}
